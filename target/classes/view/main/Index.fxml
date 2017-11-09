@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="352.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+   <children>
+      <Button fx:id="chooseJsonFile" layoutX="26.0" layoutY="63.0" mnemonicParsing="false" onAction="#chooseJsonFile" prefHeight="25.0" prefWidth="132.0" text="Choose a Json file" />
+      <TextField fx:id="displayJsonPath" layoutX="168.0" layoutY="63.0" prefHeight="25.0" prefWidth="381.0" />
+      <Button fx:id="chooseJavaFile" layoutX="26.0" layoutY="162.0" mnemonicParsing="false" onAction="#chooseJavaFile" prefHeight="25.0" prefWidth="132.0" text="Choose a Java Class" />
+      <TextField fx:id="displayJavaPath" layoutX="169.0" layoutY="162.0" prefHeight="25.0" prefWidth="381.0" />
+      <Button fx:id="chooseProject" layoutX="26.0" layoutY="96.0" mnemonicParsing="false" onAction="#chooseProjectFolder" prefHeight="25.0" prefWidth="132.0" text="Choose a src Project " />
+      <TextField fx:id="displayProjectPath" layoutX="168.0" layoutY="96.0" prefHeight="25.0" prefWidth="381.0" />
+      <TextField fx:id="displayPackageFile" layoutX="168.0" layoutY="129.0" prefHeight="25.0" prefWidth="381.0" />
+      <Button fx:id="choosePackage" layoutX="26.0" layoutY="129.0" mnemonicParsing="false" onAction="#choosePackageFolder" prefHeight="25.0" prefWidth="132.0" text="Choose Package" />
+      <ChoiceBox fx:id="listMethode" layoutX="166.0" layoutY="199.0" prefHeight="25.0" prefWidth="381.0" />
+      <Label layoutX="76.0" layoutY="203.0" text="List of function" />
+      <Button fx:id="displayResult" layoutX="168.0" layoutY="291.0" mnemonicParsing="false" onAction="#displayResult" text="Run WPS" />
+      <Button fx:id="displayMap" layoutX="242.0" layoutY="291.0" mnemonicParsing="false" onAction="#dislpayMapsGoeJson" text="Display Map" />
+      <Label layoutX="48.0" layoutY="237.0" prefHeight="17.0" prefWidth="109.0" text="Name of Output File" />
+      <TextField fx:id="outputJsonFile" layoutX="167.0" layoutY="233.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="488.0" layoutY="243.0" text=".json" />
+      <Button fx:id="clearAll" layoutX="334.0" layoutY="291.0" mnemonicParsing="false" onAction="#cleanAll" text="Clear all" />
+      <Button fx:id="clearJsonField" layoutX="559.0" layoutY="63.0" mnemonicParsing="false" onAction="#clearJsonField" text="Clear" />
+      <Button fx:id="clearProjectField" layoutX="559.0" layoutY="97.0" mnemonicParsing="false" onAction="#clearProjectField" text="Clear" />
+      <Button fx:id="clearPackageField" layoutX="560.0" layoutY="130.0" mnemonicParsing="false" onAction="#clearPackageField" text="Clear" />
+      <Button fx:id="clearJavaField" layoutX="561.0" layoutY="164.0" mnemonicParsing="false" onAction="#clearJavaField" text="Clear" />
+   </children>
+</AnchorPane>
